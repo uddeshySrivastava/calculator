@@ -1,40 +1,80 @@
-# Next.js + Tailwind CSS template
+                                TODO LIST 
+1. Header, footer  > logo, home, about 
+2. Main >  ( 1st component )
+>  what do you want to do ?
+> options :- add, sub, mul, div
+3. after select option ( 2nd component )
+> enter 1st number  you want to (add)  : Prompt
+> enter 2nd number  you want to (add)  : Prompt
+> button (add) on click 
+4. answer (after add 2 digit :answer )
+> your answer is (answer)
 
-This project template aims to simplify the setup of Tailwind CSS on your Next.js app.
 
-Before using this template, please make sure that your development environment is ready as stated on [Next.js](https://nextjs.org/learn/basics/create-nextjs-app/setup) website.
+UI 
 
-## Create a Next.js App
+1. Componet will be in center of the page.
+2. Color will be B\W.
+3. It should be mobile and desktop responsive.
 
-To create a Next.js app with this template, open your terminal, `cd` into the directory you'd like to create the app in, and run the command below:
+FUNC 
 
-Note:
-Replace `nextjs-blog` with the project name you'd like to create, eg. `my-nextjs-app`.
+1. useState() // to manage all the state.
+2. window.prompt() // to get values from user.
+3. onClick() in <button> // to call or run the function
+4. object ArithmeticFunctions > add, sub, div, mul. // with the help of keys and value.
+5. in function > parseInt()  // to convert sstring into number.
+6. if ...else & isNan() // to check if the value is not NaN. 
+7. Alert to show the confirmation.  
+8. Show data in html by dynamic variables // we can use useState variables.       
 
-```
-npx create-next-app nextjs-blog --use-npm --example "https://github.com/earvinpiamonte/nextjs-tailwindcss-template"
-```
 
-## Run development server
+/////////////////////////////////////////////////////////////////////
 
-```
-cd nextjs-blog
-```
+HTML Structure:
 
-```
-npm run dev
-```
+Set up the basic structure of the HTML file with a header, footer, and main content section.
+Add a logo, home, and about links in the header.
+UI Design:
 
-## Deploy with Vercel
+Use black and white colors for the UI.
+Ensure the UI is mobile and desktop responsive.
+Component Setup:
 
-Deploy this template using Vercel:
+Create a centered component within the main section.
+Use CSS to center the component on the page.
+State Management:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/earvinpiamonte/nextjs-tailwindcss-template)
+Use useState() to manage all the necessary state variables.
+User Input:
 
-## Maintainer
+Use window.prompt() to get values from the user.
+Create a dropdown or radio buttons to select the arithmetic operation.
+Store the selected operation in state.
+Calculation:
 
-This project is maintained by [Noel Earvin Piamonte](https://www.earvinpiamonte.com).
+Implement arithmetic functions for add, subtract, multiply, and divide.
+Store these functions as keys and values in an object called ArithmeticFunctions.
+Button Click:
 
-## Credits
+Add a button with an onClick() event handler.
+When the button is clicked, call the appropriate arithmetic function based on the selected operation.
+Validation and Calculation:
 
-[Deploy button image](https://vercel.com/button) used on this `README.md` is owned by [Vercel](https://vercel.com).
+Use parseInt() to convert user input strings into numbers.
+Check if the entered values are valid numbers using if...else statements and isNaN().
+If any value is not valid, display an alert or error message to the user.
+Perform the arithmetic operation and store the result in a variable.
+Display the Result:
+
+Use dynamic variables (e.g., {result}) to display the calculated result in the HTML code.
+Update the result variable in state using useState().
+CSS Styling:
+
+Apply CSS styles to make the UI responsive on both mobile and desktop devices.
+Use media queries and frameworks like Bootstrap for responsiveness.
+Test and Refactor:
+
+Test the functionality of the application in a browser.
+Ensure the arithmetic operations work correctly and the UI is responsive.
+Refactor the code if necessary and make any additional improvements or additions.
